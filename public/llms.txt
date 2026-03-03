@@ -1,0 +1,19 @@
+# HR-UPDATER: v1.0
+# programmierer-stellen.de - Programmierer Stellenangebote
+
+> programmierer-stellen.de ist ein spezialisiertes Jobportal fuer Programmierer-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+
+## Ueber uns
+- Spezialisiertes Jobportal fuer Programmierer
+- Kostenlose Stellensuche fuer Bewerber
+- Gezielte Reichweite fuer Arbeitgeber
+
+## Kontakt
+- Website: https://programmierer-stellen.de
+- Arbeitgeber-Kontakt: https://programmierer-stellen.de/kontakt-arbeitgeber
+- Bewerber-Kontakt: https://programmierer-stellen.de/kontakt-bewerber
+
+## Inhalte
+- Aktuelle Programmierer-Stellenangebote
+- Karriere-Ratgeber fuer Programmierer
+- Gehaltsvergleiche und Brancheninformationen

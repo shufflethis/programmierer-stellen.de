@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Thomas Sander",
+  "url": "https://programmierer-stellen.de/autor/thomas-sander",
+  "jobTitle": "Gruender & Geschaeftsfuehrer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "programmierer-stellen.de",
+    "url": "https://programmierer-stellen.de"
+  },
+  "description": "Gruender von programmierer-stellen.de - spezialisiertes Jobportal fuer Programmierer-Stellenangebote.",
+  "knowsAbout": [
+    "Programmierer",
+    "Personalwesen",
+    "Recruiting",
+    "Jobportale"
+  ]
+}
