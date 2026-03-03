@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Code2, Github, Linkedin, Twitter, Terminal, Cpu, Database, Server } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -77,8 +78,10 @@ const Footer: React.FC = () => {
             © 2024 programmierer-stellen.de // All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-[10px] uppercase font-bold tracking-widest text-tech-600 font-mono">
-            <span>Impressum</span>
-            <span>Privacy</span>
+            <Link to="/impressum" className="hover:text-blue-400 transition-colors">Impressum</Link>
+            <Link to="/datenschutz" className="hover:text-blue-400 transition-colors">Datenschutz</Link>
+            <Link to="/kontakt" className="hover:text-blue-400 transition-colors">Kontakt</Link>
+            <Link to="/autor/thomas-sander" className="hover:text-blue-400 transition-colors">Autor</Link>
             <span>Open Source</span>
           </div>
         </div>
