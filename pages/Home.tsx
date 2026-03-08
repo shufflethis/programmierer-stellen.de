@@ -15,6 +15,132 @@ import { Search, MapPin, Filter, Terminal, Code2 } from 'lucide-react';
 const SAMPLE_JOBS: JobListing[] = [
   {
     id: '1',
+    title: 'Wagenmeister/in (m/w/d) für den mobilen Dienst als Vorarbeiter/in (m/w/d)',
+    company: 'NORDIC RAIL SERVICE GMBH',
+    location: 'Lübeck',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '2',
+    title: 'Versicherungs- und Finanzexperte im angestellten Außendienst im Raum Weißenburg/Gunzenhausen (w/m/d)',
+    company: 'HUK-COBURG Versicherungsgruppe',
+    location: 'Weißenburg i. Bayern',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '3',
+    title: 'Versicherungs- und Finanzexperte im angestellten Außendienst im Raum Weißenburg/Gunzenhausen (w/m/d)',
+    company: 'HUK-COBURG Versicherungsgruppe',
+    location: 'Nürnberg',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '4',
+    title: 'Key Account Manager (m/w/d) - Gebiet Großraum Nürnberg - München',
+    company: 'Sikla GmbH',
+    location: 'Nürnberg',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '5',
+    title: 'Key Account Manager (m/w/d) - Gebiet Großraum Nürnberg - München',
+    company: 'Sikla GmbH',
+    location: 'München',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '6',
+    title: 'SPS-Programmierer (w/m/d)',
+    company: 'Personalhaus EXPERT',
+    location: 'Bielefeld',
+    type: 'Vollzeit',
+    tags: ['SPS-Fachkraft'],
+    postedAt: '2026-03-07'
+  },
+  {
+    id: '7',
+    title: 'SPS Programmierer (m/w/d)',
+    company: 'Personalhaus EXPERT',
+    location: 'Bielefeld',
+    type: 'Vollzeit',
+    tags: ['SPS-Ingenieur/in'],
+    postedAt: '2026-03-07'
+  },
+  {
+    id: '8',
+    title: 'SPS-Programmierer (m/w/d)',
+    company: 'dosmatix GmbH',
+    location: 'Hausen, Niederbayern',
+    type: 'Vollzeit',
+    tags: ['SPS-Fachkraft'],
+    postedAt: '2026-03-06'
+  },
+  {
+    id: '9',
+    title: 'SPS-Programmierer (m/w/d)',
+    company: 'FERCHAU GmbH Niederlassung Aachen AF Haus 3. OG',
+    location: 'Aachen',
+    type: 'Vollzeit',
+    tags: ['SPS-Fachkraft'],
+    postedAt: '2026-03-06'
+  },
+  {
+    id: '10',
+    title: 'SPS-Programmierer (m/w/d)',
+    company: 'FERCHAU GmbH Niederlassung Bielefeld',
+    location: 'Bielefeld',
+    type: 'Vollzeit',
+    tags: ['SPS-Fachkraft'],
+    postedAt: '2026-03-06'
+  },
+  {
+    id: '11',
+    title: 'SPS-Programmierer (m/w/d)',
+    company: 'Alpha-Engineering KG - Erfurt',
+    location: 'Erfurt',
+    type: 'Vollzeit',
+    tags: ['SPS-Ingenieur/in'],
+    postedAt: '2026-03-06'
+  },
+  {
+    id: '12',
+    title: 'SPS-Programmierer (m/w/d)',
+    company: 'FERCHAU GmbH Niederlassung Friedrichshafen',
+    location: 'Wangen im Allgäu',
+    type: 'Vollzeit',
+    tags: ['SPS-Fachkraft'],
+    postedAt: '2026-03-05'
+  },
+  {
+    id: '13',
+    title: 'SPS-Programmierer (m/w/d)',
+    company: 'DEKRA Arbeit GmbH',
+    location: 'Heidenheim an der Brenz',
+    type: 'Vollzeit',
+    tags: ['SPS-Fachkraft'],
+    postedAt: '2026-03-05'
+  },
+  {
+    id: '14',
+    title: 'Programmierer (m/w/d)',
+    company: 'KRÖNING – Automation GmbH & Co. KG',
+    location: 'Dohna, Sachsen',
+    type: 'Vollzeit',
+    tags: ['Ingenieur/in - Mechatronik'],
+    postedAt: '2026-03-04'
+  },
+  {
+    id: '15',
     title: 'Programmierer (m/w/d) (Delphi)',
     company: 'Projekt® Software GmbH',
     location: 'Brackel bei Winsen, Luhe',
@@ -23,7 +149,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '2',
+    id: '16',
     title: 'SPS-Programmierer (m/w/d)',
     company: 'FERCHAU GmbH Vertriebsstützpunkt Schwerin',
     location: 'Schwerin, Mecklenburg',
@@ -32,7 +158,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-03'
   },
   {
-    id: '3',
+    id: '17',
     title: 'Softwareentwickler (m/w/d)',
     company: 'WeMatch.',
     location: 'Düsseldorf',
@@ -41,7 +167,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-03'
   },
   {
-    id: '4',
+    id: '18',
     title: 'Programmierer m/w/d',
     company: 'Aboratis',
     location: 'Chemnitz, Sachsen',
@@ -50,7 +176,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '5',
+    id: '19',
     title: 'Programmierer m/w/d der Gebäudeautomation',
     company: 'Energietechnik Holl GmbH',
     location: 'Cochem',
@@ -59,7 +185,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '6',
+    id: '20',
     title: 'Programmierer (w/m/d)',
     company: 'P & P Handelsgesellschaft mbH',
     location: 'Löbau',
@@ -68,7 +194,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '7',
+    id: '21',
     title: 'CAD/CAM - Programmierer (m/w/d)',
     company: 'Tempton Personaldienstleistungen GmbH NL Viechtach',
     location: 'Geiersthal',
@@ -77,7 +203,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '8',
+    id: '22',
     title: 'SPS-Programmierer (m/w/d)',
     company: 'DEKRA Arbeit GmbH',
     location: 'Bremen',
@@ -86,7 +212,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '9',
+    id: '23',
     title: 'SPS Programmierer (m/w/d)',
     company: 'JobImpulse Süd GmbH Nürtingen',
     location: 'Winterbach bei Schorndorf, Württ.',
@@ -95,7 +221,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '10',
+    id: '24',
     title: 'CAM-Programmierer (w/m/d)',
     company: 'Piening GmbH',
     location: 'Berlin',
@@ -104,139 +230,13 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '11',
+    id: '25',
     title: 'SPS Programmierer:in',
     company: 'Baljer & Zembrod GmbH & Co. KG',
     location: 'Altshausen',
     type: 'Vollzeit',
     tags: ['SPS-Fachkraft'],
     postedAt: '2026-03-02'
-  },
-  {
-    id: '12',
-    title: 'SPS-Programmierer (m/w/d)',
-    company: 'FERCHAU GmbH Niederlassung Frankfurt',
-    location: 'Glauburg',
-    type: 'Vollzeit',
-    tags: ['SPS-Fachkraft'],
-    postedAt: '2026-03-02'
-  },
-  {
-    id: '13',
-    title: 'SPS-Programmierer (m/w/d)',
-    company: 'FERCHAU GmbH Niederlassung Dresden',
-    location: 'Dresden',
-    type: 'Vollzeit',
-    tags: ['SPS-Fachkraft'],
-    postedAt: '2026-03-02'
-  },
-  {
-    id: '14',
-    title: 'SPS-Programmierer (m/w/d)',
-    company: 'FERCHAU GmbH Niederlassung Augsburg',
-    location: 'Augsburg, Bayern',
-    type: 'Vollzeit',
-    tags: ['SPS-Fachkraft'],
-    postedAt: '2026-03-02'
-  },
-  {
-    id: '15',
-    title: 'SPS-Programmierer (m/w/d)',
-    company: 'FERCHAU GmbH Niederlassung Hannover',
-    location: 'Hannover',
-    type: 'Vollzeit',
-    tags: ['SPS-Fachkraft'],
-    postedAt: '2026-03-02'
-  },
-  {
-    id: '16',
-    title: 'SPS-Programmierer (m/w/d)',
-    company: 'FERCHAU GmbH Wiesbaden Pharma & Life Science',
-    location: 'Wiesbaden',
-    type: 'Vollzeit',
-    tags: ['SPS-Fachkraft'],
-    postedAt: '2026-03-02'
-  },
-  {
-    id: '17',
-    title: 'SPS-Programmierer (m/w/d)',
-    company: 'FERCHAU GmbH Niederlassung Bremen City',
-    location: 'Bremen',
-    type: 'Vollzeit',
-    tags: ['SPS-Fachkraft'],
-    postedAt: '2026-03-02'
-  },
-  {
-    id: '18',
-    title: 'SPS-Programmierer (m/w/d)',
-    company: 'FERCHAU GmbH Vertriebsstützpunkt Oelde',
-    location: 'Oelde, Westfalen',
-    type: 'Vollzeit',
-    tags: ['SPS-Fachkraft'],
-    postedAt: '2026-03-02'
-  },
-  {
-    id: '19',
-    title: 'SPS-Programmierer (m/w/d)',
-    company: 'FERCHAU GmbH Niederlassung Erfurt',
-    location: 'Nordhausen, Thüringen',
-    type: 'Vollzeit',
-    tags: ['SPS-Fachkraft'],
-    postedAt: '2026-03-02'
-  },
-  {
-    id: '20',
-    title: 'NC-Programmierer (m/w/d)',
-    company: 'TimePartner Personalmanagement GmbH',
-    location: 'Augsburg, Bayern',
-    type: 'Vollzeit',
-    tags: ['Anwendungsprogrammierer/in'],
-    postedAt: '2026-03-01'
-  },
-  {
-    id: '21',
-    title: 'Programmierer',
-    company: 'Zikon GmbH',
-    location: 'Erfurt',
-    type: 'Vollzeit',
-    tags: ['Konstruktionsmechaniker/in - Feinblechbautechnik'],
-    postedAt: '2026-02-27'
-  },
-  {
-    id: '22',
-    title: 'Programmierer (m/w/d)',
-    company: 'DIS AG Industrie',
-    location: 'Pforzheim',
-    type: 'Vollzeit',
-    tags: ['Fachinformatiker/in - Anwendungsentwicklung'],
-    postedAt: '2026-02-27'
-  },
-  {
-    id: '23',
-    title: 'Programmierer (m/w/d)',
-    company: 'G.I.S. Gesellschaft für Industrieservice',
-    location: 'Karlstein am Main',
-    type: 'Vollzeit',
-    tags: ['Fachinformatiker/in - Anwendungsentwicklung'],
-    postedAt: '2026-02-23'
-  },
-  {
-    id: '24',
-    title: 'Programmierer (w/m/d)',
-    company: 'Brunel GmbH NL Aachen',
-    location: 'Aachen',
-    type: 'Vollzeit',
-    tags: ['Informatiker/in'],
-    postedAt: '2026-02-13'
-  },
-  {
-    id: '25',
-    title: 'Programmierer (m/w/d)',
-    company: 'AlphaConsult KG',
-    location: 'Cham, Oberpfalz',
-    type: 'Vollzeit',
-    tags: ['Systemprogrammierer/in'],
-    postedAt: '2026-02-05'
   }
 ];
 
