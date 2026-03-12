@@ -1,19 +1,36 @@
 # HR-UPDATER: v1.0
 # programmierer-stellen.de - Programmierer Stellenangebote
 
-> programmierer-stellen.de ist ein spezialisiertes Jobportal fuer Programmierer-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+> programmierer-stellen.de ist ein spezialisiertes Jobportal fuer Programmierer-Stellenangebote in Deutschland, Oesterreich und der Schweiz. Betrieben von der Social Media Venture GmbH.
 
 ## Ueber uns
-- Spezialisiertes Jobportal fuer Programmierer
+- Spezialisiertes Jobportal fuer Programmierer und Softwareentwickler
 - Kostenlose Stellensuche fuer Bewerber
 - Gezielte Reichweite fuer Arbeitgeber
+- Taeglich aktualisierte Stellenangebote aus ganz Deutschland
+
+## Betreiber
+- Firma: Social Media Venture GmbH
+- Geschaeftsfuehrer: Thomas Sander
+- Adresse: Schliemannstrasse 23, 10437 Berlin
+- Telefon: +49 30 959 988 700
+- E-Mail: info@socialmediaventure.com
+- Website: https://programmierer-stellen.de
 
 ## Kontakt
 - Website: https://programmierer-stellen.de
-- Arbeitgeber-Kontakt: https://programmierer-stellen.de/kontakt-arbeitgeber
-- Bewerber-Kontakt: https://programmierer-stellen.de/kontakt-bewerber
+- Arbeitgeber-Kontakt: https://programmierer-stellen.de/#/kontakt
+- Bewerber-Kontakt: https://programmierer-stellen.de/#/kontakt
 
 ## Inhalte
-- Aktuelle Programmierer-Stellenangebote
+- Aktuelle Programmierer-Stellenangebote (SPS, Softwareentwicklung, Web-Development, etc.)
 - Karriere-Ratgeber fuer Programmierer
-- Gehaltsvergleiche und Brancheninformationen
+- Gehaltsinformationen und Branchenuebersichten
+- Regionale Jobsuche in allen grossen deutschen Staedten
+
+## Seiten
+- Startseite: https://programmierer-stellen.de/
+- Kontakt: https://programmierer-stellen.de/#/kontakt
+- Impressum: https://programmierer-stellen.de/#/impressum
+- Datenschutz: https://programmierer-stellen.de/#/datenschutz
+- Autor: https://programmierer-stellen.de/#/autor/thomas-sander

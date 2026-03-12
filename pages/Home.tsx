@@ -7,10 +7,11 @@ import Hero from '../components/Hero';
 import JobCard from '../components/JobCard';
 import ApplicationModal from '../components/ApplicationModal';
 import ContentSection from '../components/ContentSection';
+import GermanCitiesGeo from '../components/geo/GermanCitiesGeo';
 import Footer from '../components/Footer';
 import { JobListing } from '../types';
 import { searchSection, employerSection, applicantSection, aboutSection } from '../data/content';
-import { Search, MapPin, Filter, Terminal, Code2 } from 'lucide-react';
+import { Search, MapPin, Filter, Terminal, Code2, ChevronDown, ChevronUp, GraduationCap, TrendingUp, Briefcase } from 'lucide-react';
 
 const SAMPLE_JOBS: JobListing[] = [
   {
@@ -240,9 +241,37 @@ const SAMPLE_JOBS: JobListing[] = [
   }
 ];
 
+const FAQ_ITEMS = [
+  {
+    question: 'Welche Programmierer-Jobs werden auf programmierer-stellen.de angeboten?',
+    answer: 'Wir listen eine breite Auswahl an Programmierer-Stellenangeboten: Softwareentwickler, SPS-Programmierer, Web-Developer, Full-Stack-Ingenieure, Backend- und Frontend-Entwickler, DevOps-Engineers, Mobile-Entwickler und viele mehr. Die Stellen decken alle gaengigen Programmiersprachen und Technologien ab.'
+  },
+  {
+    question: 'Ist die Jobsuche fuer Bewerber kostenlos?',
+    answer: 'Ja, die Nutzung von programmierer-stellen.de ist fuer Bewerber vollstaendig kostenlos. Sie koennen alle Stellenangebote durchsuchen, sich direkt bewerben und Job-Alerts einrichten, ohne dass Kosten entstehen.'
+  },
+  {
+    question: 'Wie kann ich mich auf eine Stelle bewerben?',
+    answer: 'Klicken Sie einfach auf das gewuenschte Stellenangebot und nutzen Sie den Bewerben-Button. Sie werden dann durch den Bewerbungsprozess gefuehrt und koennen Ihre Unterlagen direkt hochladen oder per E-Mail senden.'
+  },
+  {
+    question: 'Werden auch Remote- und Teilzeit-Stellen angeboten?',
+    answer: 'Ja, wir listen sowohl Vollzeit- als auch Teilzeit-Stellen sowie Remote- und Hybrid-Positionen. Nutzen Sie die Filteroptionen, um gezielt nach dem gewuenschten Arbeitsmodell zu suchen.'
+  },
+  {
+    question: 'Wie aktuell sind die Stellenangebote?',
+    answer: 'Unsere Stellenangebote werden taeglich aktualisiert. Wir arbeiten direkt mit Arbeitgebern und der Bundesagentur fuer Arbeit zusammen, um sicherzustellen, dass alle Anzeigen aktuell und relevant sind.'
+  },
+  {
+    question: 'Wie kann ich als Arbeitgeber eine Stelle inserieren?',
+    answer: 'Arbeitgeber koennen ueber unsere Kontaktseite oder direkt per E-Mail an info@socialmediaventure.com eine Stellenanzeige aufgeben. Wir bieten verschiedene Pakete fuer eine gezielte Reichweite bei qualifizierten Programmierern.'
+  },
+];
+
 const Home: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState<string>('');
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   const handleApply = (jobTitle: string) => {
     setSelectedJob(jobTitle);
@@ -322,6 +351,94 @@ const Home: React.FC = () => {
           <ContentSection id="about" content={aboutSection} className="bg-tech-900/50" />
         </div>
       </main>
+
+      {/* German Cities Geo SEO Section */}
+      <GermanCitiesGeo />
+
+      {/* Career Info Section */}
+      <section className="py-20 bg-tech-900/30 border-t border-tech-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-5xl font-sans font-extrabold text-white mb-4 tracking-tighter">Karriere als Programmierer in Deutschland</h2>
+            <p className="text-tech-400 max-w-2xl mx-auto text-lg">Wissenswertes rund um Gehalt, Einstieg und Karrierechancen fuer Programmierer.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <div className="bg-tech-900 rounded-xl border border-tech-800 p-6 lg:p-8">
+              <div className="p-3 bg-brand-primary/10 rounded-lg w-fit mb-4">
+                <TrendingUp className="text-brand-primary w-6 h-6" />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-3">Gehalt & Verguetung</h3>
+              <p className="text-tech-400 text-sm leading-relaxed">
+                Programmierer gehoeren zu den bestbezahlten Fachkraeften in Deutschland. Einstiegsgehaelter liegen je nach Region und Spezialisierung zwischen 45.000 und 60.000 Euro brutto jaehrlich. Erfahrene Senior-Entwickler und Architekten koennen 80.000 bis ueber 100.000 Euro erreichen. In Staedten wie Muenchen, Frankfurt und Stuttgart sind die Gehaelter tendenziell hoeher.
+              </p>
+            </div>
+            <div className="bg-tech-900 rounded-xl border border-tech-800 p-6 lg:p-8">
+              <div className="p-3 bg-brand-secondary/10 rounded-lg w-fit mb-4">
+                <GraduationCap className="text-brand-secondary w-6 h-6" />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-3">Einstieg & Ausbildung</h3>
+              <p className="text-tech-400 text-sm leading-relaxed">
+                Der Einstieg in die Programmierung ist ueber verschiedene Wege moeglich: Informatik-Studium, Fachinformatiker-Ausbildung, Coding-Bootcamps oder als Quereinsteiger mit Selbststudium. Besonders gefragt sind Kenntnisse in Python, JavaScript, Java, C# und SQL. Auch SPS-Programmierung bietet hervorragende Karrierechancen in der Industrie.
+              </p>
+            </div>
+            <div className="bg-tech-900 rounded-xl border border-tech-800 p-6 lg:p-8">
+              <div className="p-3 bg-brand-accent/10 rounded-lg w-fit mb-4">
+                <Briefcase className="text-brand-primary w-6 h-6" />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-3">Arbeitsmarkt & Chancen</h3>
+              <p className="text-tech-400 text-sm leading-relaxed">
+                Der Fachkraeftemangel in der IT-Branche sorgt fuer hervorragende Berufsaussichten. Laut Branchenverband Bitkom sind in Deutschland ueber 100.000 IT-Stellen unbesetzt. Programmierer profitieren von flexiblen Arbeitsmodellen wie Remote-Arbeit, ueberdurchschnittlichen Sozialleistungen und zahlreichen Weiterbildungsmoeglichkeiten.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-tech-950 border-t border-tech-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-5xl font-sans font-extrabold text-white mb-4 tracking-tighter">Haeufig gestellte Fragen</h2>
+            <p className="text-tech-400 max-w-2xl mx-auto text-lg">Alles Wichtige rund um Programmierer-Stellenangebote auf einen Blick.</p>
+          </div>
+          <div className="space-y-3">
+            {FAQ_ITEMS.map((item, index) => (
+              <div key={index} className="bg-tech-900 rounded-xl border border-tech-800 overflow-hidden">
+                <button
+                  onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
+                  className="w-full flex items-center justify-between p-5 lg:p-6 text-left hover:bg-tech-800/50 transition-colors"
+                >
+                  <span className="text-white font-semibold text-sm lg:text-base pr-4">{item.question}</span>
+                  {openFaqIndex === index ? (
+                    <ChevronUp className="text-brand-primary flex-shrink-0" size={20} />
+                  ) : (
+                    <ChevronDown className="text-tech-500 flex-shrink-0" size={20} />
+                  )}
+                </button>
+                {openFaqIndex === index && (
+                  <div className="px-5 lg:px-6 pb-5 lg:pb-6">
+                    <p className="text-tech-400 text-sm leading-relaxed">{item.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* FAQ Schema Markup */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: FAQ_ITEMS.map(item => ({
+              '@type': 'Question',
+              name: item.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: item.answer,
+              },
+            })),
+          }) }} />
+        </div>
+      </section>
 
       <Footer />
 
