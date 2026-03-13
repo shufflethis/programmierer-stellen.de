@@ -32,12 +32,12 @@ const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 pt-4">
-              <a href="#jobs" className="px-10 py-4 bg-brand-primary hover:bg-white text-tech-950 rounded-lg font-bold text-lg transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3 shadow-2xl shadow-brand-primary/20">
+              <button onClick={() => document.getElementById('jobs')?.scrollIntoView({ behavior: 'smooth' })} className="px-10 py-4 bg-brand-primary hover:bg-white text-tech-950 rounded-lg font-bold text-lg transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3 shadow-2xl shadow-brand-primary/20">
                 Jobs explorieren <ArrowRight size={22} />
-              </a>
-              <a href="#employer" className="px-10 py-4 glass-card text-white hover:bg-tech-800 rounded-lg font-bold text-lg transition-all flex items-center justify-center gap-3">
+              </button>
+              <button onClick={() => document.getElementById('employer')?.scrollIntoView({ behavior: 'smooth' })} className="px-10 py-4 glass-card text-white hover:bg-tech-800 rounded-lg font-bold text-lg transition-all flex items-center justify-center gap-3">
                 <Code size={20} className="text-brand-secondary" /> Für Unternehmen
-              </a>
+              </button>
             </div>
 
             <div className="flex items-center gap-8 pt-8">
